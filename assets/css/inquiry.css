@@ -1,0 +1,158 @@
+/* CSS Document */
+.required {
+  margin-bottom: 30px;
+}
+
+.required-mark {
+  padding-left: 2px;
+  color: #aa0808;
+}
+
+.small-text {
+  font-size: 1.2rem;
+}
+
+.section-contact.section-wrapper {
+  padding-bottom: 56px;
+}
+
+.section-contact.section-wrapper .section-contact__contents {
+  background-color: #fafaf7;
+  margin: 0 auto;
+  padding: 56px 16px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.section-contact.section-wrapper .section-contact__contents .contact_title {
+  text-align: center;
+}
+
+.section-contact.section-wrapper .section-contact__contents .contact_title h2 {
+  font-size: 2.0rem;
+  padding-bottom: 24px;
+}
+
+.section-contact.section-wrapper .section-contact__contents label {
+  font-weight: 500;
+}
+
+@media (min-width: 960px) {
+  .section-contact.section-wrapper {
+    padding-bottom: 80px;
+  }
+  .section-contact.section-wrapper .section-contact__contents {
+    padding: 80px 48px;
+  }
+}
+
+.inquiry_form {
+  padding-top: 50px;
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.input-item label {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.input-item input[type="text"], .input-item textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2px;
+  border: solid 1px #b5b6b9;
+  margin-bottom: 24px;
+  border-radius: 5px;
+}
+
+.input-item input[type="text"] {
+  height: 40px;
+}
+
+.input-item textarea {
+  height: 300px;
+}
+
+.check-item input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: -2px;
+  border-color: #b5b6b9;
+}
+
+.check-item .small-lavel {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.inquiry_form__submit {
+  height: 48px;
+  width: 100%;
+  background-color: #29211f;
+  color: #efefef;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.5);
+}
+
+.inquiry_form__submit:hover {
+  opacity: 1;
+  color: #0F1419;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #efefef;
+}
+
+@media (min-width: 768px) {
+  .inquiry_form {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .inquiry_form .input-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 100%;
+  }
+  .inquiry_form .input-item label {
+    width: 30%;
+  }
+  .inquiry_form .input-item-text label {
+    padding-top: 4px;
+  }
+  .inquiry_form input[type="text"] {
+    height: 40px;
+    width: 60%;
+  }
+  .inquiry_form textarea {
+    height: 300px;
+    width: 70%;
+  }
+  .check-item {
+    margin-bottom: 8px;
+  }
+  .check-item input[type="checkbox"] {
+    position: relative;
+    top: -2px;
+  }
+  .inquiry_form__submit {
+    height: 60px;
+    font-size: 2.0rem;
+  }
+}
+/*# sourceMappingURL=inquiry.css.map */

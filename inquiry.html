@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="assets/css/inquiry.css">
+</head>
+
+<body>
+  <header class="header" id="top"> 
+    <div id="nav-wrapper" class="header-content-wrapper">
+      <h1 class="header__title"><a href="top.html" class="logo">
+        <img src="assets/images/common/logo.png" alt="ロゴ"></a></h1>
+      <div id="js-hamburger" class="header__hamburger hamburger"> <span></span> <span></span> <span></span>
+      </div>
+      <nav class="sp-nav">
+        <ul class="font__sub-title">
+          <li><a href="top.html">HOME</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="system.html">SYSTEM</a></li>
+          <li><a href="inquiry.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="black-bg" id="js-black-bg"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-top">
+      <img class="section-top__img" src="assets/images/inquiry/contact_top.png" alt="contact画像">
+      <div class="section-top-title__container">
+        <div class="section-wrapper">
+          <div class="section-top-title__wrapper load-fade">
+            <h2 class="font__sub-title">CONTACT</h2>
+            <div class="section-top-title__kana">お問い合わせ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-contact section-wrapper">
+      <div class="section-contact__contents">
+        <div class="contact_title">
+          <h2>お問い合わせフォーム</h2>
+          <div class="contact_title__text">
+            お気軽にお問い合わせください。
+          </div>
+        </div>
+        <form class="inquiry_form" method="post" action="inquiry.html">
+          <div class="small-text required">「<span class="required-mark">＊</span>」は必須項目です。</div>
+          <div class="input-item input-item-text">
+            <label for="input_name">名前<span class="required-mark">*</span></label>
+            <input type="text" name="name" id="input_name" value="" placeholder="例：山田太郎">
+          </div>
+          <div class="input-item input-item-text">
+            <label for="input_email">E-mail<span class="required-mark">*</span></label>
+            <input id="input_email" type="text" name="mail"
+            value="" placeholder="例：example@gmail.com">
+          </div>
+          <div class="input-item input-item-text">
+            <label for="confirmation-email">E-mail 確認用<span class="required-mark">*</span></label>
+            <input id="confirmation-email" type="text" name="mail" value="" placeholder="例：example@gmail.com">
+          </div>
+          <div class="input-item input-item_detail">
+            <label for="detail">お問い合わせ内容<span class="required-mark">*</span></label>
+            <textarea id="detail" class="inquiry_detail" placeholder="入力して下さい。"></textarea>
+          </div>
+          <div class="check-item">
+            <input class="inquiry_form__confirm" id="entry_contents" type="checkbox">
+            <label class="small-lavel" for="entry_contents">上記内容を確認しました</label>
+          </div>
+          <input id="btn_submit" class="inquiry_form__submit" type="submit" value="送信">
+        </form>
+      </div>
+    </section> 
+    <div class="pagetop">
+      <div class="pagetop__text">TOP</div>
+      <div class="pagetop__arrow-up"></div>
+    </div>
+
+    <div class="sp-underbar">
+      <ul>
+        <li><a href="top.html#top">
+          <div class="sp-underbar__icon">
+            <img src="assets/images/common/home_icon.png" alt="ホームアイコン">
+          </div>
+          <div class="sp-underbar__text">ホーム</div>
+        </a></li>
+        <li><a href="news.html#news">
+          <div class="sp-underbar__icon">
+            <img src="assets/images/common/megahon_icon.png" alt="お知らせアイコン">
+          </div>
+          <div class="sp-underbar__text">お知らせ</div>
+        </a></li>
+        <li><a href="system.html#price">
+          <div class="sp-underbar__icon">
+            <img src="assets/images/common/cat_icon.png" alt="料金アイコン">
+          </div>
+          <div class="sp-underbar__text">料金</div>
+        </a></li>
+        <li><a href="system.html#attention">
+          <div class="sp-underbar__icon">
+            <img src="assets/images/common/cat_foot_icon.png" alt="お願いアイコン">
+          </div>
+          <div class="sp-underbar__text">お願い</div>
+        </a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+      <div class="footer-wrapper__filter">
+        <div class="footer-content">
+          <a href="top.html" class="logo"><img src="assets/images/common/logo.png" alt="ロゴ"></a>
+          <nav class="site-map">
+            <ul class="site-map__links font__sub-title">
+              <li><a href="top.html">HOME</a></li>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="system.html">SYSTEM</a></li>
+              <li><a href="inquiry.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="footer__social-icon">
+            <a href="#"><img src="assets/images/common/instagram_icon.png" alt="instagramのアイコン"></a>
+            <a href="#"><img src="assets/images/common/twitter_icon.png" alt="twitterのアイコン"></a>
+          </div>
+          <small class="footer__copyright">Copyright © 2023 MeowWork Inc.</small>
+        </div>
+      </div>
+  </footer>
+<script src="assets/js/common.js"></script>
+
+</body>
+</html>

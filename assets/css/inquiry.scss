@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+$text-color: #efefef;
+$text-color_b: #0F1419;
+$light-color: #c8c7c7;
+$dark-color: #4d4e50;
+$btn-color: #29211f;
+$contents-bg: #fafaf7;
+$nav-bg:#201a18;
+
+.required {
+  margin-bottom: 30px;
+}
+.required-mark {
+  padding-left: 2px;
+  color: #aa0808;
+}
+.small-text {
+  font-size: 1.2rem;
+}
+.section-contact.section-wrapper {
+  padding-bottom: 56px;
+  .section-contact__contents {
+    background-color: $contents-bg;
+    margin: 0 auto;
+    padding: 56px 16px;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    .contact_title {
+      text-align: center;
+      h2 {
+        font-size: 2.0rem;
+        padding-bottom: 24px;
+      }
+    }
+    label {
+      font-weight: 500;
+    }
+  }
+}
+@media(min-width: 960px){
+  .section-contact.section-wrapper {
+    padding-bottom: 80px;
+    .section-contact__contents {
+      padding: 80px 48px ;
+    }
+  }
+}
+
+.inquiry_form {
+  padding-top: 50px;
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.input-item {
+  label{
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px;
+    border: solid 1px #b5b6b9;
+    margin-bottom: 24px;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    height: 40px;
+  }
+  textarea {
+    height: 300px;
+  }
+}
+.check-item {
+  input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -2px;
+    border-color: #b5b6b9;
+  }
+  .small-lavel {
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+}
+.inquiry_form__submit {
+  height: 48px;
+  width: 100%;
+  background-color: $btn-color;
+  color: $text-color;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.5);
+}
+.inquiry_form__submit:hover {
+  opacity: 1;
+  color: $text-color_b;
+  transform: translateY(3px);
+  box-shadow: none;
+  color: $text-color;
+}
+
+@media(min-width: 768px){
+  .inquiry_form {
+    margin: 0 auto;
+    width: 100%;
+    .input-item {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+      label {
+        width: 30%;
+      }
+    }
+    .input-item-text label {
+      padding-top: 4px;
+    }
+    input[type="text"] {
+      height: 40px;
+      width: 60%;
+    }
+    textarea {
+      height: 300px;
+      width: 70%;
+    }
+  }
+  .check-item {
+    margin-bottom: 8px;
+    input[type="checkbox"]{
+      position: relative;
+      top: -2px;
+    }
+  }
+  .inquiry_form__submit {
+    height: 60px;
+    font-size: 2.0rem;
+  }
+}
